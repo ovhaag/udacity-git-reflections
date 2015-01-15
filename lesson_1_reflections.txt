@@ -1,0 +1,79 @@
+# Udacity "How to Use Git and GitHub"
+# Lesson 1 reflexctions
+
+## How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+- I can focus on the lines that acually changed
+
+- Some changes are easy to overlook. E.g. the chage from "1" to "l", "I" or "!".
+  If "I cannot spot it on the first glance" it helps to know that 
+  "in this line somethich has changed" 
+
+## How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+- I can make more courageous changes and deletes because 
+  I can go back to an old version easily, 
+  I can even recover elements of an old version
+  
+- its only a minor improvement, but the opportunity to read the history 
+  can help me find typical patterns and streamline my workflow
+  
+- a hidden (but acceesssible) history keeps the view clear, while
+  working with different filenames like "xxx_old_07" clutters the view
+
+## What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+pro
+
+- I can force commits at points (times) whne thy make sense, e. g.
+  after a logial step or
+  when I'm sure the code works
+  
+- I can combine related changes in one commit
+  even if they are spread over different files
+
+con
+
+- if I forget to commit for some reason (e.g. disturbed, in flow, ..)
+  nothing is saved
+
+## Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+- (As said) in Git, .. I can combine related changes in one commiteven if
+  they are spread over different files. In Google Docs this is not possible.
+
+## How can you use the commands git log and git diff to view the history of files?
+
+- git log gives the complete history of commit ids and commit messages
+
+- git diff id1 id2 gives the actual changes from id1 to id2 
+
+## How might using version control make you more confident to make changes that could break something?
+
+- I know, that I can go back to the working version
+
+- Even if I don't realize the bug at once, I can even go back stepwise 
+  and find out where the bug is introduced
+  
+## SET UP WORKSPACE
+
+NOT done
+
+- add git-completion.bash
+- add git-prompt.sh
+- edit .bash_profile
+
+Done 
+
+- git config --global core.editor "mate -w"
+- git config --global push.default upstream
+- git config --global merge.conflictstyle diff3
+  
+## Now that you have your workspace set up, what do you want to try using Git for?
+
+I use git as before locally for programming plus
+
+- use remote repositories (githup + other provider)
+- work with branches for experiments
+
+I hope to learn how to accomplish theese tasks in this udacity course
