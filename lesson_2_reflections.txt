@@ -10,17 +10,24 @@
 ## How is the staging area different from the working directory and the repository?
 ## What value do you think it offers?
 
-- staging is not about the contents of the file
-  it is about which files are tracked
-- wd is about the current conten of all files
-- rep is about the history of the tracked files
+- The **working directory** contains the current files with their current content
+- The **staging area** contains the only the staged files 
+  with the content they had at the moment they were added.
+  Theese files will be committed as staged.
+- The **repository** contains the committed files 
+  with their staging content at commit time,
+  i.e. the history of the files up to the last commit.
 
 value
 
-- I can decide which files I want to track
+- I can decide which files I want to commit
+- I have some control on the state of the files I want to commit
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+
+- include files in staging area when they belong to the logical change
+- exclude files from staging area when they don't belong to the logical change
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
