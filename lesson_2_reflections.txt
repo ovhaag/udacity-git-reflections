@@ -23,19 +23,39 @@ value
 - I can decide which files I want to commit
 - I have some control on the state of the files I want to commit
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+## How can you use the staging area to make sure you have one commit per logical change?
 
 - include files in staging area when they belong to the logical change
 - exclude files from staging area when they don't belong to the logical change
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+## What are some situations when branches would be helpful in keeping your history organized? 
+## How would branches help?
 
-How do the diagrams help you visualize the branch structure?
+- do experiments -- can decide later if useful (useful? merge : delete)
+- work parallel on different features -- can commit independently
+- work parallel on feature(s) and bugfix(es) -- can commit independently
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+## How do the diagrams help you visualize the branch structure?
 
-What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
-manually?
+- diagrams schow which how commits are related and
+- which commits are reachable from a given commit (or a branchs head)
+
+## What is the result of merging two branches together?
+## Why do we represent it in the diagram the way we do?
+
+- changes of both branches are included in the result
+- so if each branch realizes one feature, the mege should realize both
+- the diagram reflects thet the new node joins the branches
+
+## What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+pro
+
+- automerge usually is fast and easy
+- automerge avoids human errors
+
+cons
+
+- in some rare sitiations automerge will fail
+  and then it may be hard to fix the merge commit
+
